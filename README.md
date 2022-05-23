@@ -3,9 +3,13 @@
 
 ### 1.Kütühpaneler;
 •	Pandas: Bu kütüphane temel olarak zaman etiketli serileri ve sayısal tabloları işlemek için bir veri yapısı oluşturur ve bu şekilde çeşitli işlemler bu veri yapısı üzerinde gerçekleştirilebilir.
+
 •	Numpy: Çok boyutlu dizileri ve matrisleri destekleyen, bu diziler üzerinde çalışacak üst düzey matematiksel işlevler ekleyen bir kitaplıktır.
+
 •	Sklearn: Makine öğrenimi kitaplığıdır.
+
 •	Matplotlib: Sayısal matematik uzantısı NumPy için bir çizim kitaplığıdır. Tkinter, wxPython, Qt veya GTK gibi genel amaçlı GUI araç takımlarını kullanarak grafikleri uygulamalara gömmek için nesne yönelimli bir API sağlar.
+
 •	Seborn: Seaborn, matplotlib tabanlı bir Python veri görselleştirme kütüphanesidir.
 
 
@@ -33,14 +37,22 @@ Siyah şerit şeklinde gösterilen ticket ve kabin barplotları çok fazla kateg
 Numerik ve Kategorik verilere bakıldığında gereksiz kolonlar olabilir. Örneğin Yolcu Id numarası tahmin için işimize yaramayacaktır. İşlemlerimizde gereksiz dallanma yaratmamaları için bu kolonlar silinmelidir.
 Numerik verilerimizden;
 •	PassengerId
+
 •	Sibsp
+
 •	Parch
+
 Verilerini sileceğiz.
 Kategorik verilerimizden;
+
 •	Name
+
 •	Ticket
+
 •	Cabin
+
 •	Embarked
+
 Verilerini sileceğiz.
 
 #### i.  Boş veriler doldurma
@@ -53,16 +65,16 @@ Sklearn kütüphanesi yardımıyla train ve test verileri ayrılmalıdır. Ancak
 Ardından train ve test verimizi ayrılır, genel olarak ayırma oranı %30’a %70’tir. %30 test verisi %70 train verisidir. Bizim elimizdeki veriler üzerinden gidecek olacaksak train verisi 623 tane, test verisi ise 268 tanedir.
 
 ### 5.Algoritma Seçmek
-•	Linear regression
-•	Logistic regression
-•	Decision tree
-•	SVM algorithm
-•	Naive Bayes algorithm
-•	KNN algorithm
-•	K-means
-•	Random forest algorithm
-•	Dimensionality reduction algorithms
-•	Gradient boosting algorithm and AdaBoosting algorithm
+-	Linear regression
+-	Logistic regression
+-	Decision tree
+-	SVM algorithm
+-	Naive Bayes algorithm
+-	KNN algorithm
+-	K-means
+-	Random forest algorithm
+-	Dimensionality reduction algorithms
+-	Gradient boosting algorithm and AdaBoosting algorithm
 Algoritmaları arasından Karar Ağaçlarını seçiyoruz. [Desicion Tree]
 #### Decision Tree:
 Karar Ağacı algoritması, denetimli öğrenme algoritmaları ailesine aittir. Diğer denetimli öğrenme algoritmalarından farklı olarak, karar ağacı algoritması regresyon ve sınıflandırma problemlerini çözmek için de kullanılabilir.
@@ -72,13 +84,13 @@ Karar Ağaçlarında, bir kayıt için bir sınıf etiketi tahmin etmek için a�
 
 ![image](https://user-images.githubusercontent.com/54424377/169785569-34bf81f3-b871-4e87-a312-e2ef727b6761.png)
 
-•	Root Node: Tüm popülasyonu veya örneği temsil eder ve bu ayrıca iki veya daha fazla homojen kümeye bölünür.
-•	Splitting: Bir düğümün iki veya daha fazla alt düğüme bölünmesi işlemidir.
-•	Decision Node: Bir alt düğüm başka alt düğümlere bölündüğünde karar düğümü olarak adlandırılır.
-•	Leaf / Terminal Node: Bölünmeyen düğümlere Yaprak veya Terminal düğümü denir.
-•	Pruning: Bir karar düğümünün alt düğümlerini kaldırdığımızda bu işleme budama denir. Bölme işleminin tersini söyleyebilirsiniz.
-•	Branch / Sub-Tree: Tüm ağacın bir alt bölümüne dal veya alt ağaç denir.
-•	Parent and Child Node: Alt düğümlere bölünmüş bir düğüm, alt düğümlerin ana düğümü olarak adlandırılırken, alt düğümler bir ana düğümün çocuğudur.
+-	Root Node: Tüm popülasyonu veya örneği temsil eder ve bu ayrıca iki veya daha fazla homojen kümeye bölünür.
+-	Splitting: Bir düğümün iki veya daha fazla alt düğüme bölünmesi işlemidir.
+-	Decision Node: Bir alt düğüm başka alt düğümlere bölündüğünde karar düğümü olarak adlandırılır.
+-	Leaf / Terminal Node: Bölünmeyen düğümlere Yaprak veya Terminal düğümü denir.
+- Pruning: Bir karar düğümünün alt düğümlerini kaldırdığımızda bu işleme budama denir. Bölme işleminin tersini söyleyebilirsiniz.
+-	Branch / Sub-Tree: Tüm ağacın bir alt bölümüne dal veya alt ağaç denir.
+-	Parent and Child Node: Alt düğümlere bölünmüş bir düğüm, alt düğümlerin ana düğümü olarak adlandırılırken, alt düğümler bir ana düğümün çocuğudur.
 
 
 #### Nitelik Seçim Ölçüleri:
